@@ -1,0 +1,38 @@
+{% load bootstrap3 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SirajNet</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+</head>
+<body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                </button>
+                <a class=”navbar-brand” href="{% url 'sirajnet:index' %}">Index</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class=”page-header”>
+            {% block header %}{% endblock header %}
+        </div>
+        <div>
+            {% block content %}{% endblock content %}
+        </div>
+        <h3>Links:</h3>
+        <p> <a href="https://github.com/paubric/python-sirajnet">Were the idea comes from.</a> </p>
+        <p> <a href="https://github.com/dirkh24/django_sirajnet">The Code of the webpage.</a> </p>
+    </div>
+</body>
+</html>

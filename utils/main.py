@@ -1,3 +1,4 @@
+# from https://github.com/paubric/python-sirajnet
 from textblob import Word
 import random
 import argparse

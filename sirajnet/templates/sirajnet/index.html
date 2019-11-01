@@ -1,0 +1,30 @@
+{% extends 'sirajnet/base.html' %}
+{% load bootstrap3 %}
+{% block header %}
+    <div class='jumbotron'>
+        <h1>SirajNet</h1>
+    </div>
+{% endblock header %}
+
+{% block content %}
+    <div class="container">
+        <h3>Enter your text here:</h3>
+            <h4>Here are some examples to try:</h4>
+            <ul>
+            <li><p>Hello World, it's Siraj</p></li>
+            <li><p>Hello world it's Siraj and this week i'm going to show you how Gaussian gates and complex Hilbert
+                spaces work. Stay cool wizards</p></li>
+            </ul>
+            <form action="{% url 'sirajnet:result' %}" method='post'>
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                {% buttons %}
+                    <button name='submit'>Using deep complicated NLP</button>
+                {% endbuttons %}
+            </form>
+    </div>
+{% endblock content %}
+
+
+
+

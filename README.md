@@ -1,5 +1,5 @@
 # Sirajnet
-Using deep complicated NLP to turn your text into my text by arbitrarily swapping words for their synonyms. /s
+Using deep complicated NLP to turn your text into my text by arbitrarily swapping words for their synonyms. /s wrapped with django (https://www.djangoproject.com/) to host it online.  
 
 ## The Idea
 Comes from Paul Bricman, and his repo: https://github.com/paubric/python-sirajnet. 
